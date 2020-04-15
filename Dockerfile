@@ -2,7 +2,6 @@ FROM php:7.4.4-fpm
 
 ENV ACCEPT_EULA=Y
 
-LABEL originator="Vincent Letourneau <vincent@nanoninja.com>"
 LABEL maintainer="Antoine Besnier <nouanda@laposte.net>"
 
 # Microsoft SQL Server Prerequisites
