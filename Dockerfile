@@ -20,9 +20,8 @@ RUN apt-get update \
     && apt-get update \
     && apt-get -y --no-install-recommends install \
         unixodbc-dev \
-        msodbcsql17
-
-RUN apt-get update && apt-get upgrade -y \
+        msodbcsql17 \
+    && apt-get upgrade -y \
     && apt-get install -y \
     g++ \
     libbz2-dev \
@@ -45,6 +44,7 @@ RUN apt-get update && apt-get upgrade -y \
     libreadline-dev \
     libxslt1-dev \
     libzip-dev \
+    libonig-dev \
     memcached \
     wget \
     unzip \
