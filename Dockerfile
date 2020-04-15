@@ -2,7 +2,8 @@ FROM php:7.4.4-fpm
 
 ENV ACCEPT_EULA=Y
 
-LABEL maintainer="Vincent Letourneau <vincent@nanoninja.com>"
+LABEL originator="Vincent Letourneau <vincent@nanoninja.com>"
+LABEL maintainer="Antoine Besnier <nouanda@laposte.net>"
 
 # Microsoft SQL Server Prerequisites
 # from https://laravel-news.com/install-microsoft-sql-drivers-php-7-docker
