@@ -58,7 +58,6 @@ RUN apt-get update \
     opcache \
     pdo_mysql \
     pdo_pgsql \
-    pdo_dblib \
     pgsql \
     soap \
     sockets \
