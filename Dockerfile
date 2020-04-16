@@ -9,7 +9,7 @@ LABEL maintainer="Antoine Besnier <nouanda@laposte.net>"
 RUN apt-get update \
     && apt-get -y --no-install-recommends install gnupg \
     && curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
-    && curl https://packages.microsoft.com/config/debian/9/prod.list \
+    && curl https://packages.microsoft.com/config/debian/10/prod.list \
         > /etc/apt/sources.list.d/mssql-release.list \
     && apt-get install -y --no-install-recommends \
         locales \
