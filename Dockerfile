@@ -7,7 +7,6 @@ LABEL maintainer="Antoine Besnier <nouanda@laposte.net>"
 # Microsoft SQL Server Prerequisites
 # from https://laravel-news.com/install-microsoft-sql-drivers-php-7-docker
 RUN apt-get update \
-    && apt-get -y install php7.4-sybase \
     && apt-get -y --no-install-recommends install gnupg \
     && curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
     && curl https://packages.microsoft.com/config/debian/10/prod.list \
@@ -59,7 +58,6 @@ RUN apt-get update \
     opcache \
     pdo_mysql \
     pdo_pgsql \
-    pdo_dblib \
     pgsql \
     soap \
     sockets \
