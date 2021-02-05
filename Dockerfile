@@ -48,7 +48,6 @@ RUN apt-get update \
     wget \
     unzip \
     zlib1g-dev \
-    composer \
     && docker-php-ext-install -j$(nproc) \
     bcmath \
     bz2 \
