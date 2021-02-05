@@ -48,6 +48,7 @@ RUN apt-get update \
     wget \
     unzip \
     zlib1g-dev \
+    composer \
     && docker-php-ext-install -j$(nproc) \
     bcmath \
     bz2 \
@@ -63,7 +64,6 @@ RUN apt-get update \
     sockets \
     xmlrpc \
     xsl \
-    composer \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install -j$(nproc) gd \
     && PHP_OPENSSL=yes docker-php-ext-configure imap --with-kerberos --with-imap-ssl \
